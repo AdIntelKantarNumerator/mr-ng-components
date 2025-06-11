@@ -1,5 +1,6 @@
 import * as i0 from '@angular/core';
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 class MrNgComponents {
     static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "19.2.14", ngImport: i0, type: MrNgComponents, deps: [], target: i0.ɵɵFactoryTarget.Component });
@@ -7,15 +8,15 @@ class MrNgComponents {
     <p>
       mr-ng-components works!
     </p>
-  `, isInline: true, styles: [""] });
+  `, isInline: true, styles: [":host{display:block}\n"], dependencies: [{ kind: "ngmodule", type: CommonModule }] });
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "19.2.14", ngImport: i0, type: MrNgComponents, decorators: [{
             type: Component,
-            args: [{ selector: 'lib-mr-ng-components', imports: [], template: `
+            args: [{ selector: 'lib-mr-ng-components', standalone: true, imports: [CommonModule], template: `
     <p>
       mr-ng-components works!
     </p>
-  ` }]
+  `, styles: [":host{display:block}\n"] }]
         }] });
 
 /*
