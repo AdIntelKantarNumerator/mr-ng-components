@@ -6,7 +6,10 @@
     "outDir": "../../out-tsc/spec",
     "types": [
       "jasmine"
-    ]
+    ],
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true // Adding declarationMap for better source mapping
   },
   "include": [
     "src/**/*.ts"
